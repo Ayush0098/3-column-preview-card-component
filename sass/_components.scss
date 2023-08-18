@@ -1,23 +1,35 @@
 ////////////////////////////////////////////
 /// BUTTON Component
 .btn {
-  text-decoration: none;
-  display: inline-block;
-  background-color: var(--color-white-transparent-2);
-  font-size: 1.5rem;
-  border-radius: 20rem;
-  padding: 1.5rem 3rem;
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--color-white-transparent-2);
+    font-size: 1.5rem;
+    border-radius: 20rem;
+    padding: 1.5rem 3rem;
+    border: 0.3rem solid transparent;
+    transition: all 0.3s;
 
-  &--1 {
-    color: var(--color-primary-orange);
+    &--1 {
+      color: var(--color-primary-orange);
+    }
+
+    &--2 {
+      color: var(--color-primary-cyan);
+    }
+
+    &--3 {
+      color: var(--color-primary-cyan-dark);
+    }
   }
 
-  &--2 {
-    color: var(--color-primary-cyan);
-  }
-
-  &--3 {
-    color: var(--color-primary-cyan-dark);
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border: 0.3rem solid var(--color-white-transparent-2);
+    color: var(--color-white-transparent-2);
   }
 }
 

@@ -2,9 +2,8 @@
 /// Container For the Card Columns
 
 .container {
-  margin: 8rem auto;
   max-width: 80rem;
-
+  margin: 8rem auto;
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
@@ -15,29 +14,24 @@
 }
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
-  color: var(--color-white-transparent-1);
-  padding: 2rem;
+  color: var(--color-primary-cyan);
   font-size: 1.2rem;
-  position: absolute;
-  width: 100vw;
-
-  &__text {
-  }
+  padding: 2rem;
 
   &__link {
     &:link,
     &:visited {
+      display: inline-block;
       color: inherit;
       text-decoration: none;
-      color: var(--color-primary-orange);
+      color: var(--color-primary-cyan-dark);
       transition: all 0.2s;
     }
 
     &:hover {
       transform: scale(1.1);
-      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
     }
   }
 }
