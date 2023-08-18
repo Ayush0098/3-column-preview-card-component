@@ -1,0 +1,43 @@
+////////////////////////////////////////////
+/// Container For the Card Columns
+
+.container {
+  margin: 8rem auto;
+  max-width: 80rem;
+
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+
+  @media only screen and (max-width: $bp-phone) {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: var(--color-white-transparent-1);
+  padding: 2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  width: 100vw;
+
+  &__text {
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+      color: var(--color-primary-orange);
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
+    }
+  }
+}

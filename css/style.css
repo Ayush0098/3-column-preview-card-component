@@ -1,0 +1,95 @@
+:root {
+  --color-primary-orange: hsl(31, 77%, 52%);
+  --color-primary-cyan: hsl(184, 100%, 22%);
+  --color-primary-cyan-dark: hsl(179, 100%, 13%);
+  --color-white-transparent-1: hsla(0, 0%, 100%, 0.75);
+  --color-white-transparent-2: hsl(0, 0%, 95%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 62.5%; }
+
+body {
+  background-color: var(--color-white-transparent-less);
+  position: relative;
+  height: 100vh; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Big Shoulders Display", cursive; }
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--color-white-transparent-2);
+  font-size: 1.5rem;
+  border-radius: 20rem;
+  padding: 1.5rem 3rem; }
+  .btn--1 {
+    color: var(--color-primary-orange); }
+  .btn--2 {
+    color: var(--color-primary-cyan); }
+  .btn--3 {
+    color: var(--color-primary-cyan-dark); }
+
+.card {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden; }
+  .card--1 {
+    background-color: var(--color-primary-orange); }
+  .card--2 {
+    background-color: var(--color-primary-cyan); }
+  .card--3 {
+    background-color: var(--color-primary-cyan-dark); }
+  .card__icon {
+    height: 4rem;
+    margin-bottom: 3rem; }
+  .card__heading {
+    font-size: 3rem;
+    color: var(--color-white-transparent-2);
+    text-transform: uppercase;
+    margin-bottom: 3rem; }
+  .card__text {
+    font-size: 1.5rem;
+    color: var(--color-white-transparent-1);
+    margin-bottom: 6rem; }
+
+.container {
+  margin: 8rem auto;
+  max-width: 80rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex; }
+  @media only screen and (max-width: 23.4375em) {
+    .container {
+      flex-direction: column; } }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: var(--color-white-transparent-1);
+  padding: 2rem;
+  font-size: 1.2rem;
+  position: absolute;
+  width: 100vw; }
+  .footer__link:link, .footer__link:visited {
+    color: inherit;
+    text-decoration: none;
+    color: var(--color-primary-orange);
+    transition: all 0.2s; }
+  .footer__link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3); }

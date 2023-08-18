@@ -1,0 +1,15 @@
+////////////////////////////////////////////////////
+/// VARIABLES
+// Colors
+:root {
+  --color-primary-orange: hsl(31, 77%, 52%);
+  --color-primary-cyan: hsl(184, 100%, 22%);
+  --color-primary-cyan-dark: hsl(179, 100%, 13%);
+
+  --color-white-transparent-1: hsla(0, 0%, 100%, 0.75);
+  --color-white-transparent-2: hsl(0, 0%, 95%);
+}
+
+// Breakpoints
+$bp-phone: 23.4375em;
+$bp-desktop: 90em;
