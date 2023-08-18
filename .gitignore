@@ -17,3 +17,5 @@
 
 # Ignoring some files
 help.txt
+design/
+node_modules/
